@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* ============Common=========== */
+/* ================================Common===================================== */
 a {
   text-decoration: none;
 }
@@ -49,7 +49,24 @@ a {
   opacity: 0.9;
   cursor: pointer;
 }
-/* ============Header============== */
+.lineclamp-first {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lineclamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--lineclamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lineclamp-line2 {
+  --lineclamp: 2;
+}
+.word-break {
+  word-break: break-all;
+}
+/* ==============================Header================================= */
 .header {
   background: #fffcf4;
 }
@@ -101,7 +118,7 @@ a {
   margin-left: 54px;
 }
 
-/* =============hero============= */
+/* ====================================hero===================================== */
 .hero {
   padding: 57px 0 64px;
   background: #fffcf4;
@@ -109,7 +126,7 @@ a {
 .hero .body {
   display: flex;
 }
-/* ==============hero left============== */
+/* =========================hero left=========================== */
 .hero .media-block {
   width: 48%;
   position: relative;
@@ -166,7 +183,7 @@ a {
   font-weight: 600;
   line-height: 1.67; /* 166.667% */
 }
-/* ================hero right============ */
+/* ===========================hero right======================== */
 .hero .content-block {
   width: 52%;
   padding-top: 46px;
@@ -239,8 +256,8 @@ a {
   margin-left: 28px;
 }
 
-/* =========Popular=========== */
-/* =========Popular-top========== */
+/* ===============================Popular================================== */
+/* ======================Popular-top======================== */
 .popular {
   padding: 65px 0;
   margin-top: 135px;
@@ -275,7 +292,7 @@ a {
   background: var(--primary-color);
   cursor: pointer;
 }
-/* ===========Courses========== */
+/* ============================Courses======================= */
 .popular .course-list {
   margin-top: 55px;
   display: flex;
@@ -291,6 +308,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 .popular .course-item:hover {
   border: none;
@@ -304,6 +322,7 @@ a {
   justify-content: space-between;
 }
 .popular .course-item .title {
+  width: 233.77px;
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
